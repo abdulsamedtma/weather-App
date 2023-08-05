@@ -1,0 +1,80 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: #222;
+  font-family: 'Open Sans', sans-serif;
+  background-image: url('https://images.source.com/1600x900/?nature,water');
+  font-size: 120%;
+}
+
+.card{
+  background: #000000d0;
+  color: white;
+  padding: 2rem;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 420px;
+  margin: 1rem;
+}
+.search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5em;
+  border-radius: 50%;
+ 
+}
+
+button{
+  margin: 0.5em;
+  border-radius: 50%;
+  border: none;
+  height: 45px;
+  width:  45px;
+  outline: none;
+  background: #7c7c7c2b;
+  color: white;
+}
+
+input.search-bar{
+  border: none;
+  outline: none;
+  padding: 0.3em 1em;
+  border-radius: 18px;
+  background: #7c7c7c2b;
+  color: white;
+  font-family: inherit;
+  font-size: 105%;
+  width: calc(100% - 100px);
+}
+button:hover{
+  background: #7c7c7c;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+h1.temp {
+  font-size: 3rem;
+  font-weight: 150%;
+  margin: 0;
+  margin-bottom: 0.5em;
+  
+}
+.description{
+  text-transform: capitalize;
+  margin-left: 8px;
+}
+.weather.loading{
+visibility: hidden;
+max-height: 20px;
+}
+.weather.loading {
+  visibility: visible;
+  content: "loading...";
+  color: white;
+}
